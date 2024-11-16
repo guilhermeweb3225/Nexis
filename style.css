@@ -25,5 +25,62 @@ header>div#div-links{
     justify-content: space-around;
     width: 70%;
     height: 50px;
-    background-color: aliceblue;
+    background-color: rgb(0, 0, 0);
+}
+
+header>div#div-links>div{
+    width: auto;
+    height: 30px;
+    background-color: rgb(0, 0, 0);
+}
+
+header>div#div-links>div:hover{
+    div.links-laptops-op{
+        width: 100%;
+        height: auto;
+        background-color: #000000;
+        display: grid;
+        border-radius: 0 0 10px 10px;
+    }
+    div.links-laptops-op>a{
+        font-size: 20px;
+        margin: 10px;
+        font-family: "Playfair Display", serif;
+        text-decoration: none;
+        color: white;
+        text-align: center;
+    }
+    div.links-laptops-op>a:hover{
+        color: red;
+    }
+    a.link-laptop{
+        color: rgb(0, 255, 0);
+    }
+}
+
+div.links-laptops-op{
+    width: 100%;
+    height: auto;
+    background-color: #000000;
+    display: grid;
+    transition: 500ms;
+}
+div.links-laptops-op>a{
+    font-size: 0px;
+    margin: 0px;
+    text-decoration: none;
+    color: white;
+    transition:500ms;
+    text-align: center;
+}
+
+
+
+header>div#div-links>div>a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    font-family: "Playfair Display", serif;
+    transition: 400ms;
 }
