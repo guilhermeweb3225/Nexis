@@ -19,6 +19,8 @@ header{
     background: black;
 }
 header>div#logo{
+    position: relative;
+    left: -100px;
     display: flex;
     align-items: center;
     justify-content: left;
@@ -28,18 +30,24 @@ header>div#logo{
 }
 div#logo>h2{
     font-size:30px;
+    text-shadow: 0px 0px 10px rgb(253, 253, 253);
 }
 div#logo>img{
+    filter: drop-shadow(0 0 10px gray);
     margin: 0 10px;
-    width: 100px;
-    height: 100px;
+    width: 95px;
+    height: 95px;
+    -webkit-filter: drop-shadow(0 0 10px gray);
 }
 header>div#div-links{
+    position: relative;
+    left: 100px;
+    top: -50px;
     display: flex;
     flex-direction: row;
     align-items: end;
     justify-content: space-around;
-    width: 70%;
+    width: 40%;
     height: 50px;
     background-color: rgb(0, 0, 0);
 }
@@ -49,44 +57,53 @@ header>div#div-links>div{
     height: 30px;
     background-color: rgb(0, 0, 0);
 }
-
+.div-todos-liks-header{
+    width: auto;
+}
 header>div#div-links>div:hover{
+
     div.links-laptops-op{
-        width: 100%;
+        width: auto;
         height: auto;
         background-color: #000000;
         display: grid;
         border-radius: 0 0 10px 10px;
-    }
-    div.links-laptops-op>a{
+        -webkit-border-radius: 0 0 10px 10px;
+        -moz-border-radius: 0 0 10px 10px;
+        -ms-border-radius: 0 0 10px 10px;
+        -o-border-radius: 0 0 10px 10px;
+}
+
+    div.links-principais-header>a{
         font-size: 20px;
         margin: 10px;
-        font-family: "Playfair Display", serif;
+        font-family: "bokor", serif;
         text-decoration: none;
         color: white;
         text-align: center;
     }
-    div.links-laptops-op>a:hover{
+    div.links-principais-header>a:hover{
         color: red;
     }
     a.link-laptop{
-        color: rgb(0, 255, 0);
+        color: #00ff00;
+        margin: 10px;
     }
 }
 
-div.links-laptops-op{
+div.links-principais-header{
     width: 100%;
     height: auto;
     background-color: #000000;
     display: grid;
-    transition: 500ms;
+    transition: 250ms;
 }
-div.links-laptops-op>a{
+div.links-principais-header>a{
     font-size: 0px;
     margin: 0px;
     text-decoration: none;
     color: white;
-    transition:500ms;
+    transition:250ms;
     text-align: center;
 }
 
@@ -97,6 +114,19 @@ header>div#div-links>div>a{
     color: white;
     font-size: 20px;
     padding: 10px;
-    font-family: "Playfair Display", serif;
+    font-family: "Bokor", serif;
     transition: 400ms;
+}
+
+/*final da cabeça/header*/
+
+/*começo do corpo*/
+
+
+
+/*tablet*/
+@media  screen and (max-width:1200px){
+    i{
+        display: none;
+    }
 }
