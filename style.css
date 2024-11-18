@@ -37,7 +37,6 @@ div#logo>img{
     margin: 0 10px;
     width: 95px;
     height: 95px;
-    -webkit-filter: drop-shadow(0 0 10px gray);
 }
 header>div#div-links{
     position: relative;
@@ -49,29 +48,29 @@ header>div#div-links{
     justify-content: space-around;
     width: 40%;
     height: 50px;
-    background-color: rgb(0, 0, 0);
+    background-color: #000000;
+}
+
+#menu-icone{
+    display: none;
 }
 
 header>div#div-links>div{
-    width: auto;
-    height: 30px;
-    background-color: rgb(0, 0, 0);
+    width: 130px;
+    height: 40px;
+    background-color: #000000;
 }
 .div-todos-liks-header{
     width: auto;
 }
 header>div#div-links>div:hover{
 
-    div.links-laptops-op{
+    div.links-principais-header{
         width: auto;
         height: auto;
         background-color: #000000;
         display: grid;
         border-radius: 0 0 10px 10px;
-        -webkit-border-radius: 0 0 10px 10px;
-        -moz-border-radius: 0 0 10px 10px;
-        -ms-border-radius: 0 0 10px 10px;
-        -o-border-radius: 0 0 10px 10px;
 }
 
     div.links-principais-header>a{
@@ -113,7 +112,6 @@ header>div#div-links>div>a{
     text-decoration: none;
     color: white;
     font-size: 20px;
-    padding: 10px;
     font-family: "Bokor", serif;
     transition: 400ms;
 }
@@ -126,7 +124,65 @@ header>div#div-links>div>a{
 
 /*tablet*/
 @media  screen and (max-width:1200px){
-    i{
-        display: none;
+    header{
+        background-color: rgb(0, 0, 0);
+        /* ICONE DE MENU */
+        #menu-icone{
+            display: flex;
+            position: absolute;
+            left: 5px;
+            top: 50px;
+            cursor: pointer;
+        }
+        /* LOGO */
+        div#logo{
+            position: absolute;
+            left: 95%;
+            top: 0;
+            transform: translate(-100%,0%);
+}
+        /* LINKS DE NAVEGAÇAO */
+        div#div-links{
+            display: none;
+    }
+    }
+    /* ABRIR MENU/JS */
+.adicionar-menu{
+    div#div-links{
+        position: absolute;
+        top: 100px;
+        left: 0;
+        background-color: white;
+        width: auto;
+        height: auto;
+        border-radius: 0 5px 5px 0;
+        display: block;
+}
+    div#div-links>.div-todos-liks-header{
+    width: 125px;
+    background-color: #ffffff;
+    border-radius: 0 5px 5px 0;
+}
+    div#div-links>.div-todos-liks-header>a{
+        color: black;
+        margin-left: 5px;
+    }
+    div#div-links>.div-todos-liks-header>div.links-principais-header{
+        position: relative;
+        left: 100%;
+        top: -20px;
+    }
+    div#div-links>div:hover{
+        div.links-principais-header{
+            border-radius: 0 10px 0px 10px;
+            box-shadow: 0 0 10px rgb(0, 0, 0);
+        }
+    }
+   }
+   /* FECHAR MENU/JS */
+   .fechar-menu{
+       div#div-links{
+           display: none;background-color: #00fffb;
+        }
     }
 }
