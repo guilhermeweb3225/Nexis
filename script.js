@@ -2,7 +2,12 @@
 var iconeMenu=document.getElementById('menu-icone');
 var header=document.getElementById('cabeca');
 //logo-interaçao
-var logo=document.getElementById('logo-preto')
+var logo=document.getElementById('logo-preto');
+//monitor imagens
+var monitor1=document.getElementById('slide-1');
+var caixaDoSlide=document.getElementById('section-1');
+
+
 //abrir menu
 function abrirMenu(){
         iconeMenu.addEventListener('click',()=>{
@@ -25,6 +30,8 @@ function fecharMenu(){
 })
 }
 
+
+//mundança de logo
 function logoPreta(){
     logo.addEventListener('click',()=>{
         logo.setAttribute('src','imagens/logo-Nexis-01.png')
@@ -40,3 +47,5 @@ function logoBranca(){
         logoPreta()
     })
 }
+
+//slide de monitor inicio
